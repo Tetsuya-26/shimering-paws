@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Drawer, IconButton, List, ListItem, ListItemText, ListItemButton, Box } from '@mui/material';
+import { Drawer, IconButton, List, ListItem,ListItemText, ListItemButton, Box, Divider } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const SideDrawer = () => {
@@ -10,24 +10,27 @@ const SideDrawer = () => {
   };
 
   return (
-    <Box sx={{display: { xs: 'flex', sm: 'none' }}}>
+    <Box sx={{ display: { xs: 'flex', sm: 'none'}}}>
       {/* Menu Icon to open the drawer */}
-      <IconButton onClick={toggleDrawer(true)} sx={{ color: '#fff' }}>
+      <IconButton onClick={toggleDrawer(true)} sx={{ color: '#fff'}}>
         <MenuIcon />
       </IconButton>
 
       {/* Drawer positioned on the right */}
-      <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
-        <List sx={{ width: 250 }}>
-          <ListItem button>
-            <ListItemText primary="Home" />
-          </ListItem>
+      <Drawer anchor="right" open={open} onClose={toggleDrawer(false)} sx={{color:'gray'}}>
+        <List sx={{ width: 250 , bgcolor:'gray', height: '100%'}}>
+          <ListItemButton>
+            <ListItemText primary="Home"  />
+          </ListItemButton>
+          <Divider/>
           <ListItemButton>
             <ListItemText primary="About" />
           </ListItemButton>
+          <Divider/>
           <ListItemButton>
             <ListItemText primary="Services" />
           </ListItemButton>
+          <Divider/>
           <ListItemButton>
             <ListItemText primary="Contact" />
           </ListItemButton>
