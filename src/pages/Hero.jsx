@@ -1,17 +1,18 @@
 import React from "react";
 import { Button } from "@mui/material";
+import CarouSel from "../components/Carousel";
 const Hero = () => {
     return (
         <section className="text-gray-400 bg-gray-900 body-font">
             <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 className="title-font font-mono sm:text-4xl text-3xl mb-4 font-medium text-gray-200">Shimering Paws
+                <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200">Shimering Paws
                     <br className="hidden lg:inline-block"/>
                 </h1>
-                <p className="mb-8 text-justify leading-relaxed font-mono">With their fluffy coats, sweet button noses, and big round eyes that seem to sparkle with mischief, Shih Tzus are the definition of adorable. These little charmers were once royal lapdogs in ancient China, and they still carry themselves like tiny emperors today! Known for their affectionate nature, playful spirit, and love of cuddles, Shih Tzus make wonderful companions for families, singles, and seniors alike. Whether they’re prancing proudly with a bow in their hair or snoozing in your lap, it’s impossible not to smile around a Shih Tzu.</p>
+                <p className="mb-8 sm:text-xl text-justify leading-relaxed">With their fluffy coats, sweet button noses, and big round eyes that seem to sparkle with mischief, Shih Tzus are the definition of adorable. These little charmers were once royal lapdogs in ancient China, and they still carry themselves like tiny emperors today! Known for their affectionate nature, playful spirit, and love of cuddles, Shih Tzus make wonderful companions for families, singles, and seniors alike. Whether they’re prancing proudly with a bow in their hair or snoozing in your lap, it’s impossible not to smile around a Shih Tzu.</p>
                    
                     <Button sx={{ fontFamily: 'Monospace' }} 
-                    size="large" 
+                    size="large"  
                     variant="outlined"
                     color="inherit" 
                     >
@@ -21,8 +22,8 @@ const Hero = () => {
                     </span> Gets Started
                     </Button>
                 </div>
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                <img className="object-cover object-center rounded contrast-100 brightness-60 border-2 border-gray-200 drop-shadow-xl/30" alt="" src="/src/assets/img/puppies.jpg"/>
+                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:shrink-0">
+                    <CarouSel />
                 </div>
             </div>
         </section>

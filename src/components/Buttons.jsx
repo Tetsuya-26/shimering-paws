@@ -6,11 +6,9 @@ const Buttons = () => {
     <Stack  spacing={1} direction="row" sx={{ 
         display: { xs: 'none', sm: 'flex' }, // Hide buttons on small screens
       }}>
-        
         <Button  sx={{fontFamily:'monospace', color:'inherit'}}>Home</Button>
-        <Button sx={{fontFamily:'monospace', color:'inherit'}}>About</Button>
-        <Button sx={{fontFamily:'monospace', color:'inherit'}}>Services</Button>
-        <Button sx={{fontFamily:'monospace', color:'inherit'}}>Contact</Button>
+        <Button sx={{fontFamily:'monospace', color:'inherit'}}>Gallery</Button>
+        <Button sx={{fontFamily:'monospace', color:'inherit'}}>ContactUs</Button>
     </Stack>
   );
 }
