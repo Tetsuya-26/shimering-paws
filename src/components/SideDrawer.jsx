@@ -20,19 +20,31 @@ const SideDrawer = () => {
       <Drawer anchor="right" open={open} onClose={toggleDrawer(false)} sx={{color:'gray'}}>
         <List sx={{ width: 250 , bgcolor:'gray', height: '100%'}}>
           <ListItemButton>
-            <ListItemText primary="Home"  />
+            <ListItemText 
+            value="Home"
+            primary="Home"
+            onClick={() =>
+                document.getElementById("Home")
+                  .scrollIntoView({ behavior: "smooth" })
+              }  />
           </ListItemButton>
           <Divider/>
           <ListItemButton>
-            <ListItemText primary="About" />
+            <ListItemText value="Gallery"
+            primary="Gallery"
+            onClick={() =>
+                document.getElementById("Gallery")
+                  .scrollIntoView({ behavior: "smooth" })
+              }  />
           </ListItemButton>
           <Divider/>
           <ListItemButton>
-            <ListItemText primary="Services" />
-          </ListItemButton>
-          <Divider/>
-          <ListItemButton>
-            <ListItemText primary="Contact" />
+            <ListItemText value="Contact"
+            primary="Contact"
+            onClick={() =>
+                document.getElementById("Contact")
+                  .scrollIntoView({ behavior: "smooth" })
+              }  />
           </ListItemButton>
         </List>
       </Drawer>
